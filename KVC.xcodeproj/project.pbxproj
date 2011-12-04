@@ -10,6 +10,7 @@
 		827D7820148A8AE900A2F4F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827D781F148A8AE900A2F4F5 /* Foundation.framework */; };
 		827D7823148A8AE900A2F4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 827D7822148A8AE900A2F4F5 /* main.m */; };
 		827D7827148A8AE900A2F4F5 /* KVC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 827D7826148A8AE900A2F4F5 /* KVC.1 */; };
+		827D782F148A8AFE00A2F4F5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 827D782E148A8AFE00A2F4F5 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		827D781B148A8AE900A2F4F5 /* KVC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KVC; sourceTree = BUILT_PRODUCTS_DIR; };
 		827D781F148A8AE900A2F4F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		827D7822148A8AE900A2F4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		827D7825148A8AE900A2F4F5 /* KVC-Prefix.pch */ = {isa = PBXFileReference; path = "KVC-Prefix.pch"; sourceTree = "<group>"; };
+		827D7825148A8AE900A2F4F5 /* KVC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVC-Prefix.pch"; sourceTree = "<group>"; };
 		827D7826148A8AE900A2F4F5 /* KVC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = KVC.1; sourceTree = "<group>"; };
+		827D782D148A8AFE00A2F4F5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		827D782E148A8AFE00A2F4F5 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 				827D7822148A8AE900A2F4F5 /* main.m */,
 				827D7826148A8AE900A2F4F5 /* KVC.1 */,
 				827D7824148A8AE900A2F4F5 /* Supporting Files */,
+				827D782D148A8AFE00A2F4F5 /* Person.h */,
+				827D782E148A8AFE00A2F4F5 /* Person.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				827D7823148A8AE900A2F4F5 /* main.m in Sources */,
+				827D782F148A8AFE00A2F4F5 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
