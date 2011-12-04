@@ -15,14 +15,17 @@ int main (int argc, const char * argv[])
     @autoreleasepool {
         
         Person *p = [[Person alloc] init];
-        Person *spouse = [[Person alloc] init];;
+        Person *spouse = [[Person alloc] init];
         
         [p setValue:@"Christopher" forKey:@"name"];
-        [p setValue:spouse forKey:@"spouse"];
-        
-        [p setValue:@"Christina" forKeyPath:@"spouse.name"];
 
         NSString *name = [p valueForKey:@"name"];
+        NSLog(@"name: %@", name);
+        
+        [p setValue:spouse forKey:@"spouse"];
+        [p setValue:@"Christina" forKeyPath:@"spouse.name"];
+        
+        name = [[p valueForKey:@"spouse"] valueForKey:@"name"];
         NSLog(@"name: %@", name);
         
         name = [p valueForKeyPath:@"spouse.name"];
