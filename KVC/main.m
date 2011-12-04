@@ -7,14 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main (int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Person *p = [[Person alloc] init];
+        Person *spouse = [[Person alloc] init];;
+        
+        [p setValue:@"Christopher" forKey:@"name"];
+        [p setValue:spouse forKey:@"spouse"];
+        
+        [p setValue:@"Christina" forKeyPath:@"spouse.name"];
+
+        NSString *name = [p valueForKey:@"name"];
+        NSLog(@"name: %@", name);
+        
+        name = [p valueForKeyPath:@"spouse.name"];
+        NSLog(@"name: %@", name);
         
     }
     return 0;
